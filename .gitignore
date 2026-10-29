@@ -1,0 +1,17 @@
+# 构建与发布产物
+build_pkg/
+release/
+dist_pkg/
+__pycache__/
+*.pyc
+
+# 个人偏好与本机状态（含用户画像，不进仓库）
+memory/*
+!memory/.gitkeep
+assets/preferences.json
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

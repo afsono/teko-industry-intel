@@ -1,0 +1,19 @@
+{
+  "_说明": "复制到 memory/preferences.json 后按需修改。intel.py 会自动读写本文件。",
+  "sectors": [],
+  "tracks": [],
+  "macro": [],
+  "persona": null,
+  "common_limit": 15,
+  "min_score": 40,
+  "channel": "term",
+  "_字段": {
+    "sectors": "关注板块，如 [\"信息技术\", \"能源\"]，可用 python scripts/intel.py --save-sector 信息技术,能源 写入",
+    "tracks": "关注赛道编号，如 [\"T001\", \"T006\"]",
+    "macro": "关注宏观频道，如 [\"G02\", \"G05\"]",
+    "persona": "画像：policymaker / executive / investor / analyst / researcher，null 表示未设置",
+    "common_limit": "默认取几条",
+    "min_score": "默认评分下限，画像会自动抬高",
+    "channel": "推送通道（预留）：term / html / webhook"
+  }
+}

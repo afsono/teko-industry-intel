@@ -1,0 +1,13 @@
+{
+ "slug": "teko-industry-intel",
+ "version": "1.1.0",
+ "name_zh": "全球头条精选",
+ "name_en": "Teko Global Industry Intelligence",
+ "category": [
+  "行业研究",
+  "商业分析",
+  "投资研究"
+ ],
+ "homepage": "https://tekoai.net",
+ "license": "MIT"
+}
