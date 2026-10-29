@@ -46,13 +46,13 @@ Underneath is a taxonomy of **174 industries + 52 themes + 16 general categories
 ### Any skill-capable agent
 
 ```
-/skills install https://github.com/tekoai/teko-industry-intel
+/skills install https://github.com/afsono/teko-industry-intel
 ```
 
 Or clone and point your agent at `SKILL.md`:
 
 ```bash
-git clone https://github.com/tekoai/teko-industry-intel.git
+git clone https://github.com/afsono/teko-industry-intel.git
 ```
 
 The skill is a `SKILL.md` plus a small Python script. No dependencies — standard library only, Python 3.9+.

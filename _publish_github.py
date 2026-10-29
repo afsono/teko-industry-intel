@@ -7,7 +7,7 @@
     GITHUB_TOKEN=ghp_xxx python _publish_github.py --repo teko-industry-intel
 
     # 方式二：先手动建好仓库，只推代码
-    git remote add origin git@github.com:tekoai/teko-industry-intel.git
+    git remote add origin git@github.com:afsono/teko-industry-intel.git
     git push -u origin main
 
 参数
@@ -15,6 +15,12 @@
     --repo    默认 teko-industry-intel
     --private 建成私有仓库（默认公开，因为站点要靠它做安装入口）
     --dry-run 只打印将要做的事
+
+⚠️ 本机注意
+    这台机器的出网走本地代理，放行 api.github.com 但**不放行 git 的 CONNECT
+    隧道**（git push 会报 schannel / 502）。所以推送请用：
+        GITHUB_TOKEN=xxx python _push_via_api.py --owner afsono
+    本脚本用于 token 归属正确、且 git 协议可用的环境。
 
 为什么用脚本而不是 gh CLI
     这台机器没装 gh，也不想为了推一次代码去装。GitHub 的 REST API
